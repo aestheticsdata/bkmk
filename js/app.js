@@ -9,7 +9,7 @@ angular.module('bkmk', ['bkmk.directives', 'bkmk.controllers', 'bkmk.services', 
             .state('home', {
                 url         : '/home',
                 templateUrl : 'partials/home.html',
-                controller  : 'LoginController'
+                controller  : 'HomeController'
             });
 
         $urlRouterProvider.otherwise('/home');
