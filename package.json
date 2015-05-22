@@ -1,0 +1,14 @@
+{
+  "name": "bkmk",
+  "version": "1.0.0",
+  "description": "a bookmarks app",
+  "main": "js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bookmarks"
+  ],
+  "author": "Sebastien Cabel",
+  "license": "MIT"
+}

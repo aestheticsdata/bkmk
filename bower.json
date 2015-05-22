@@ -1,0 +1,20 @@
+{
+  "name": "bkmk",
+  "version": "0.0.1",
+  "authors": [
+    "scabel <aesthetics.data@gmail.com>"
+  ],
+  "description": "a bookmark app",
+  "main": "index.html",
+  "keywords": [
+    "bookmarks"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
