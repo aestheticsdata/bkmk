@@ -49,7 +49,7 @@ gulp.task('concatLibs', function () {
 
 gulp.task('concatSrc', function () {
     return gulp.src(['./js/namespaces/*.js',
-        './js/directives/*.js',
+        './js/directives/**/*.js',
         './js/controllers/*.js',
         './js/services/*.js',
         './js/app.js'
