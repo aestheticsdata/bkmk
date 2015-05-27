@@ -1,3 +1,8 @@
+$menubar_height   : 50px;
+$statusbar_height : 40px;
+$top_bars_offset  : $menubar_height + $statusbar_height + 10;
+
 body {
-  padding-top: 70px;
+    padding-top: $top_bars_offset;
+    overflow-y: scroll;
 }

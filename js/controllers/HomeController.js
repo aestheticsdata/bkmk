@@ -2,6 +2,9 @@
 
 angular.module('bkmk.controllers').controller('HomeController', HomeController);
 
-function HomeController($scope) {
+function HomeController($scope, $log) {
 
+    $log.debug('HomeController');
+
+    $scope.isHome = true;
 }

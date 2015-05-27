@@ -1,0 +1,9 @@
+.statusbar {
+    z-index: 1020;
+    position: fixed;
+    top: $menubar_height + 1;
+    height: $statusbar_height;
+    background-color: #565656;
+    color: yellowgreen;
+    width: 100%;
+}
