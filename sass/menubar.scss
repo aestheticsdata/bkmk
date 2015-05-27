@@ -1,3 +1,10 @@
 .menubar {
     color: #49fc08;
+
+    .navbar-brand {
+        img {
+            display: inline-block;
+            margin-right: 5px;
+        }
+    }
 }

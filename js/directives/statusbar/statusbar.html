@@ -1,3 +1,29 @@
 <div class="statusbar">
-    {{statusbar.status}}
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-6">
+
+                <span class="col-md-6">
+                    {{statusbar.status}}
+                </span>
+
+                <div class="input-group col-md-6" ng-show="statusbar.searchbox">
+                    <span class="input-group-addon" id="basic-addon1">filter results</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                </div>
+
+            </div>
+
+            <div class="btn-group col-md-6" ng-show="statusbar.viewButtons">
+                <label class="btn btn-success" ng-model="statusbar.viewType" btn-radio="'List'">List view</label>
+                <label class="btn btn-success" ng-model="statusbar.viewType" btn-radio="'Thumbnail'">Thumbnail view</label>
+            </div>
+
+        </div>
+
+    </div>
+
 </div>
