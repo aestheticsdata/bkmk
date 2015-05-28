@@ -2,7 +2,7 @@
 
 angular.module('bkmk.controllers').controller('ListController', ListController);
 
-function ListController($scope, $log, $stateParams) {
+function ListController($scope, $log, $stateParams, DataService) {
 
     $log.debug('ListController');
 
@@ -16,5 +16,12 @@ function ListController($scope, $log, $stateParams) {
     ];
 
     $stateParams.category === 'all' ? $scope.isListAll = true : $scope.isCategory = true;
+
+    DataService.getData().success(function (data) {
+
+        $log.debug(data);
+
+        $scope.data = data;
+    });
 
 }
