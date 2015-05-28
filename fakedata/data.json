@@ -1,0 +1,101 @@
+[
+    {
+        "url"        : "http://www.romhacking.net/forum/index.php/topic,18620.0.html",
+        "category"   : "8bit",
+        "title"      : "Metroid - Rogue Dawn",
+        "quotation"  : "",
+        "thumbnail"  : "../fakedata/thumbnails/metroid_rogue.png",
+        "visibility" : "public",
+        "tags"       : ["metroid", "game", "8bit"],
+        "weight"     : "headline",
+        "date"       : "2015-05-28T16:08:11.956Z"
+    },
+    {
+        "url"        : "https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript",
+        "category"   : "JavaScript",
+        "title"      : "A re-introduction to JavaScript",
+        "quotation"  : "Why a re-introduction? Because JavaScript is notorious for being the world's most misunderstood programming language",
+        "thumbnail"  : "",
+        "visibility" : "public",
+        "tags"       : ["mdn", "programming", "JavaScript", "tutorial"],
+        "weight"     : "headline",
+        "date"       : "2015-05-28T16:12:32.665Z"
+    },
+    {
+        "url"        : "http://commodore.ninja/cia/",
+        "category"   : "8bit",
+        "title"      : "Commodore is awesome",
+        "quotation"  : "",
+        "thumbnail"  : "../fakedata/thumbnails/commodore_awesome.png",
+        "visibility" : "public",
+        "tags"       : ["commodore", "game", "8bit"],
+        "weight"     : "headline",
+        "date"       : "2015-05-28T16:17:07.483Z"
+    },
+    {
+        "url"        : "https://techtalent.io/",
+        "category"   : "jobs",
+        "title"      : "TechTalent",
+        "quotation"  : "Découvrez l'attractivité de votre profil en temps réel",
+        "thumbnail"  : "",
+        "visibility" : "public",
+        "tags"       : ["jobs"],
+        "weight"     : "common",
+        "date"       : "2015-05-28T16:21:25.224Z"
+    },
+    {
+        "url"        : "http://www.undefinednull.com/2014/02/11/mastering-the-scope-of-a-directive-in-angularjs/",
+        "category"   : "JavaScript",
+        "title"      : "Mastering the Scope of the Directives in AngularJS",
+        "quotation"  : "",
+        "thumbnail"  : "",
+        "visibility" : "public",
+        "tags"       : ["angularjs", "javascript", "tutorial", "scope"],
+        "weight"     : "common",
+        "date"       : "2015-05-28T16:21:25.224Z"
+    },
+    {
+        "url"        : "http://tinyhousebuild.com/",
+        "category"   : "Tiny houses",
+        "title"      : "tinyhousebuild.com",
+        "quotation"  : "",
+        "thumbnail"  : "../fakedata/thumbnails/Tiny-House-Photo-hOMe-03.jpg",
+        "visibility" : "public",
+        "tags"       : ["houses", "tiny"],
+        "weight"     : "common",
+        "date"       : "2015-05-28T16:27:30.706Z"
+    },
+    {
+        "url"        : "http://www.terra-ayurveda.com/Dentifrice-Neem-Grenade-113-ml",
+        "category"   : "Sante",
+        "title"      : "dentifrice ayurvedique",
+        "quotation"  : "",
+        "thumbnail"  : "../fakedata/thumbnails/Dentifrice-Neem-Curcuma.jpg",
+        "visibility" : "public",
+        "tags"       : ["sante", "ayurvedique", "dentifrice", "bio"],
+        "weight"     : "common",
+        "date"       : "2015-05-28T16:31:55.987Z"
+    },
+    {
+        "url"        : "http://www.linternaute.com/bricolage/pratique/electromenager/refrigerateur/16135/la-conservation-des-aliments-frais.html",
+        "category"   : "Sante",
+        "title"      : "La conservation des aliments frais",
+        "quotation"  : "",
+        "thumbnail"  : "../fakedata/thumbnails/food-fruits-and-vegetables.jpg",
+        "visibility" : "public",
+        "tags"       : ["cuisine", "pratique"],
+        "weight"     : "headline",
+        "date"       : "2015-05-28T16:35:57.544Z"
+    },
+    {
+        "url"        : "http://teropa.info/build-your-own-angular",
+        "category"   : "JavaScript",
+        "title"      : "A book to build your own AngularJS",
+        "quotation"  : "AngularJS is a powerful JavaScript framework. It can also be difficult to grasp fully. As a result, many struggle to capture all the benefits Angular has to offer.Build Your Own AngularJS helps you understand everything there is to understand about Angular.",
+        "thumbnail"  : "",
+        "visibility" : "public",
+        "tags"       : ["angularjs", "javascript", "tutorial"],
+        "weight"     : "common",
+        "date"       : "2015-05-28T16:39:21.026Z"
+    }
+]
