@@ -27,11 +27,11 @@ angular.module('bkmk', ['ui.bootstrap', 'bkmk.directives', 'bkmk.controllers', '
                 params      : {title : 'About'}
             })
 
-            .state('listall', {
-                url         : '/listall',
-                templateUrl : 'partials/listall.html',
-                controller  : 'ListAllController',
-                params      : {title : 'List All'}
+            .state('list', {
+                url         : '/list/:category',
+                templateUrl : 'partials/list.html',
+                controller  : 'ListController',
+                params      : {title : 'List'}
             });
 
         $urlRouterProvider.otherwise('/home');

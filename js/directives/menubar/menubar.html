@@ -16,13 +16,13 @@
                     <li ng-class="{active: isHome}"><a href="#/home">Home</a></li>
                     <li ng-class="{active: isAdmin}"><a href="#/admin">Admin</a></li>
                     <li ng-class="{active: isAbout}"><a href="#/about">About</a></li>
-                    <li ng-class="{active: isListAll}"><a href="#/listall">List All</a></li>
-                    <li class="dropdown">
+                    <li ng-class="{active: isListAll}"><a href="#/list/all">List all</a></li>
+                    <li ng-class="{active: isCategory}" class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Categories <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
+                            <li ng-repeat="category in fakeData" ng-class="{active: isActive(category)}">
+                                <a href="#/list/{{category}}">{{category}}</a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
