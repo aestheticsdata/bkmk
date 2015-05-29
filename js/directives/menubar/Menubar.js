@@ -6,6 +6,7 @@ function menuBar() {
     return {
         restrict    : 'E',
         templateUrl : '../js/directives/menubar/menubar.html',
-        replace     : true
+        replace     : true,
+        controller  : 'MenuBarController'
     }
 }

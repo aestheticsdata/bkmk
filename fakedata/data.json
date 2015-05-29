@@ -37,7 +37,7 @@
     },
     {
         "url"        : "https://techtalent.io/",
-        "category"   : "jobs",
+        "category"   : "Jobs",
         "title"      : "TechTalent",
         "quotation"  : "Découvrez l'attractivité de votre profil en temps réel",
         "thumbnail"  : "../fakedata/thumbnails/no-thumbnail.png",
@@ -61,7 +61,7 @@
     },
     {
         "url"        : "http://tinyhousebuild.com/",
-        "category"   : "Tiny houses",
+        "category"   : "Divers",
         "title"      : "tinyhousebuild.com",
         "quotation"  : "",
         "thumbnail"  : "../fakedata/thumbnails/Tiny-House-Photo-hOMe-03.jpg",
@@ -85,7 +85,7 @@
     },
     {
         "url"        : "http://www.linternaute.com/bricolage/pratique/electromenager/refrigerateur/16135/la-conservation-des-aliments-frais.html",
-        "category"   : "Sante",
+        "category"   : "Cuisine",
         "title"      : "La conservation des aliments frais",
         "quotation"  : "",
         "thumbnail"  : "../fakedata/thumbnails/food-fruits-and-vegetables.jpg",
@@ -130,5 +130,17 @@
         "weight"     : "common",
         "type"       : "video",
         "date"       : "2015-05-29T09:28:23.681Z"
+    },
+    {
+        "url"        : "https://github.com/sindresorhus/awesome",
+        "category"   : "Programming",
+        "title"      : "A curated list of awesome lists",
+        "quotation"  : "",
+        "thumbnail"  : "../fakedata/thumbnails/github-logo.jpg",
+        "visibility" : "public",
+        "tags"       : ["programming", "tutorial"],
+        "weight"     : "common",
+        "type"       : "website",
+        "date"       : "2015-05-29T10:01:50.919Z"
     }
 ]

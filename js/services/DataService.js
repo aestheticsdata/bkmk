@@ -4,8 +4,11 @@ angular.module('bkmk.services').factory('DataService', DataService);
 
 function DataService($http) {
 
+    var _category = ['Programming', 'JavaScript', 'Cuisine', '8bit', 'Divers', 'Sante', 'Jobs'];
+
     var ds = {
-        getData: _getData
+        getData     : _getData,
+        getCategory : _getCategory
     };
 
     return ds;
@@ -17,6 +20,11 @@ function DataService($http) {
     function _getData() {
 
         return $http.get('../fakedata/data.json');
+    }
+
+    function _getCategory() {
+
+        return _category;
     }
 }
 

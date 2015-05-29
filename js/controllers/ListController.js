@@ -11,9 +11,6 @@ function ListController($scope, $log, $stateParams, DataService) {
         return $stateParams.category === category;
     };
 
-    $scope.fakeData = [
-      'JavaScript', 'Cuisine', '8bit', 'Divers'
-    ];
 
     $stateParams.category === 'all' ? $scope.isListAll = true : $scope.isCategory = true;
 
