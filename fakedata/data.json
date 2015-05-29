@@ -8,6 +8,7 @@
         "visibility" : "public",
         "tags"       : ["metroid", "game", "8bit"],
         "weight"     : "headline",
+        "type"       : "website",
         "date"       : "2015-05-28T16:08:11.956Z"
     },
     {
@@ -19,6 +20,7 @@
         "visibility" : "public",
         "tags"       : ["mdn", "programming", "JavaScript", "tutorial"],
         "weight"     : "headline",
+        "type"       : "website",
         "date"       : "2015-05-28T16:12:32.665Z"
     },
     {
@@ -30,6 +32,7 @@
         "visibility" : "public",
         "tags"       : ["commodore", "game", "8bit"],
         "weight"     : "headline",
+        "type"       : "website",
         "date"       : "2015-05-28T16:17:07.483Z"
     },
     {
@@ -41,6 +44,7 @@
         "visibility" : "public",
         "tags"       : ["jobs"],
         "weight"     : "common",
+        "type"       : "website",
         "date"       : "2015-05-28T16:21:25.224Z"
     },
     {
@@ -52,6 +56,7 @@
         "visibility" : "public",
         "tags"       : ["angularjs", "javascript", "tutorial", "scope"],
         "weight"     : "common",
+        "type"       : "website",
         "date"       : "2015-05-28T16:21:25.224Z"
     },
     {
@@ -63,6 +68,7 @@
         "visibility" : "public",
         "tags"       : ["houses", "tiny"],
         "weight"     : "common",
+        "type"       : "website",
         "date"       : "2015-05-28T16:27:30.706Z"
     },
     {
@@ -74,6 +80,7 @@
         "visibility" : "public",
         "tags"       : ["sante", "ayurvedique", "dentifrice", "bio"],
         "weight"     : "common",
+        "type"       : "website",
         "date"       : "2015-05-28T16:31:55.987Z"
     },
     {
@@ -85,6 +92,7 @@
         "visibility" : "public",
         "tags"       : ["cuisine", "pratique"],
         "weight"     : "headline",
+        "type"       : "website",
         "date"       : "2015-05-28T16:35:57.544Z"
     },
     {
@@ -96,6 +104,31 @@
         "visibility" : "public",
         "tags"       : ["angularjs", "javascript", "tutorial"],
         "weight"     : "common",
+        "type"       : "website",
         "date"       : "2015-05-28T16:39:21.026Z"
+    },
+    {
+        "url"        : "https://github.com/razum2um/awesome-clojure",
+        "category"   : "Programming",
+        "title"      : "A curated list of awesome Clojure libraries and resources",
+        "quotation"  : "",
+        "thumbnail"  : "../fakedata/thumbnails/no-thumbnail.png",
+        "visibility" : "public",
+        "tags"       : ["clojure", "programming", "tutorial"],
+        "weight"     : "common",
+        "type"       : "website",
+        "date"       : "2015-05-29T09:23:41.120Z"
+    },
+    {
+        "url"        : "https://www.youtube.com/watch?v=DHubfS8E--o",
+        "category"   : "Programming",
+        "title"      : "Functional programming - Bodil Stokke",
+        "quotation"  : "",
+        "thumbnail"  : "../fakedata/thumbnails/functional_prog_bodil.png",
+        "visibility" : "public",
+        "tags"       : ["clojure", "haskell", "programming", "video"],
+        "weight"     : "common",
+        "type"       : "video",
+        "date"       : "2015-05-29T09:28:23.681Z"
     }
 ]
