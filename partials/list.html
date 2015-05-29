@@ -3,7 +3,7 @@
 <status-bar></status-bar>
 
 <div class="list">
-    <div ng-repeat="post in data | filter:isSelectedCategory" class="col-md-4">
+    <div ng-repeat="post in data | filter:isSelectedCategory | filter:selectByTag" class="col-md-4">
         <div>
             Title : {{post.title}}
         </div>

@@ -16,6 +16,19 @@ function ListController($scope, $log, $stateParams, DataService) {
         return $stateParams.category === 'all' ? true : $stateParams.category === post.category;
     };
 
+    $scope.selectByTag = function (post) {
+
+        var tagAvailable = false,
+            post_tags_length = post.tags.length;
+
+        for (var i=0; i<post_tags_length; i++) {
+            // if filter tag input is empty or match a tag then display something
+            (post.tags[i] === $scope.statusbar.tag || $scope.statusbar.tag === '') && (tagAvailable = true);
+        }
+
+        return tagAvailable;
+    };
+
     $stateParams.category === 'all' ? $scope.isListAll = true : $scope.isCategory = true;
 
     DataService.getData().success(function (data) {
