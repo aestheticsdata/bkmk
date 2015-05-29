@@ -2,7 +2,7 @@
 
 angular.module('bkmk.controllers').controller('ListController', ListController);
 
-function ListController($scope, $log, $stateParams, DataService, $timeout) {
+function ListController($scope, $log, $stateParams, DataService) {
 
     $log.debug('ListController');
 
