@@ -2,9 +2,18 @@
 
 angular.module('bkmk.controllers').controller('ListController', ListController);
 
-function ListController($scope, $log, $stateParams, DataService) {
+function ListController($scope, $log, $stateParams, DataService, $timeout) {
 
     $log.debug('ListController');
+
+    DataService.getData().success(function (data) {
+
+        $log.debug(data);
+
+        $scope.data = data;
+    });
+
+    $stateParams.category === 'all' ? $scope.isListAll = true : $scope.isCategory = true;
 
     $scope.isActive = function (category) {
 
@@ -29,13 +38,19 @@ function ListController($scope, $log, $stateParams, DataService) {
         return tagAvailable;
     };
 
-    $stateParams.category === 'all' ? $scope.isListAll = true : $scope.isCategory = true;
 
-    DataService.getData().success(function (data) {
+    $scope.listView = true;
 
-        $log.debug(data);
 
-        $scope.data = data;
+    $scope.$watch('statusbar.viewType', function () {
+
+        try {
+            $scope.listView  = ($scope.statusbar.viewType === 'List');
+            $scope.thumbView = !$scope.listView;
+        } catch (e) {
+            $log.debug('statusbar directive scope not ready');
+        }
+
     });
 
 }

@@ -8,6 +8,7 @@ function statusBar() {
         templateUrl : '../js/directives/statusbar/statusbar.html',
         replace     : true,
         scope       : false,
+        require     : 'ngModel',
         controller  : 'StatusBarController'
     }
 }
