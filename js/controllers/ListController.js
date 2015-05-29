@@ -11,6 +11,10 @@ function ListController($scope, $log, $stateParams, DataService) {
         return $stateParams.category === category;
     };
 
+    $scope.isSelectedCategory = function (post) {
+
+        return $stateParams.category === 'all' ? true : $stateParams.category === post.category;
+    };
 
     $stateParams.category === 'all' ? $scope.isListAll = true : $scope.isCategory = true;
 

@@ -8,7 +8,8 @@ function StatusBarController($scope, $log, $state, $stateParams) {
         status      : $state.params.title + ($stateParams.category !== undefined ? ' '+$stateParams.category : ''),
         searchbox   : false,
         viewButtons : false,
-        viewType    : 'List'
+        viewType    : 'List',
+        tag         : ''
     };
 
     ($state.params.title === 'List') && ($scope.statusbar.searchbox = true) && ($scope.statusbar.viewButtons = true);
