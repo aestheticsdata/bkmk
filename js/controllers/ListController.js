@@ -15,6 +15,8 @@ function ListController($scope, $log, $stateParams, DataService) {
 
     $stateParams.category === 'all' ? $scope.isListAll = true : $scope.isCategory = true;
 
+    $scope.tagSearching = false;
+
     $scope.isActive = function (category) {
 
         return $stateParams.category === category;

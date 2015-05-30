@@ -6,7 +6,9 @@ var gulp        = require('gulp'),
     rename      = require('gulp-rename'),
     uglify      = require('gulp-uglify'),
     htmlreplace = require('gulp-html-replace'),
-    zip         = require('gulp-zip');
+    zip         = require('gulp-zip'),
+    plumber     = require('gulp-plumber'),
+    onError     = function () {console.log('error')};
 
 
 
@@ -66,8 +68,9 @@ gulp.task('concatSrc', function () {
 //  └─┘┴ ┴└─┘└─┘
 
 gulp.task('sass', function () {
-    return gulp.src('./sass/main.scss')
-        .pipe(sass())
+    gulp.src('./sass/main.scss')
+        .pipe(plumber({errorHandler: onError}))
+        .pipe(sass({errorLogToConsole: true}))
         .pipe(concat('main.css'))
         .pipe(gulp.dest('./css'));
 });
