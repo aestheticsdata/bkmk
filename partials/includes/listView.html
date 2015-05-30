@@ -1,0 +1,12 @@
+<div ng-show="listView">
+    <div ng-repeat="post in filteredData = (data | filter:selectByTag) | filter:isSelectedCategory" class="col-md-4">
+        <div>
+            <a ng-href="{{post.url}}" target="_blank">
+                Title : {{post.title}}
+            </a>
+        </div>
+        <div ng-if="post.quotation">
+            quote : {{post.quotation}}
+        </div>
+    </div>
+</div>

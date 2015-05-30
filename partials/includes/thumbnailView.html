@@ -1,0 +1,13 @@
+<div ng-show="thumbView">
+    <div ng-repeat="post in data | filter:isSelectedCategory | filter:selectByTag" class="col-md-4">
+        <div>
+            Title : {{post.title}}
+        </div>
+        <div ng-if="post.quotation">
+            quote : {{post.quotation}}
+        </div>
+        <a ng-href="{{post.url}}" target="_blank">
+            <img ng-src="{{post.thumbnail}}" alt="" width="200" height="200"/>
+        </a>
+    </div>
+</div>

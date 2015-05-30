@@ -4,33 +4,9 @@
 
 <div class="list">
 
-    <div ng-show="listView">
-        <!--<div ng-repeat="post in data | filter:isSelectedCategory | filter:selectByTag" class="col-md-4">-->
-        <div ng-repeat="post in filteredData = (data | filter:selectByTag) | filter:isSelectedCategory" class="col-md-4">
-            <div>
-                <a ng-href="{{post.url}}" target="_blank">
-                    Title : {{post.title}}
-                </a>
-            </div>
-            <div ng-if="post.quotation">
-                quote : {{post.quotation}}
-            </div>
-        </div>
-    </div>
+    <div ng-include="'partials/includes/listView.html'"></div>
 
-    <div ng-show="thumbView">
-        <div ng-repeat="post in data | filter:isSelectedCategory | filter:selectByTag" class="col-md-4">
-            <div>
-                Title : {{post.title}}
-            </div>
-            <div ng-if="post.quotation">
-                quote : {{post.quotation}}
-            </div>
-            <a ng-href="{{post.url}}" target="_blank">
-                <img ng-src="{{post.thumbnail}}" alt="" width="200" height="200"/>
-            </a>
-        </div>
-    </div>
+    <div ng-include="'partials/includes/thumbnailView.html'"></div>
 
     <div class="no-matches" ng-show="filteredData.length == 0">
         No matches
