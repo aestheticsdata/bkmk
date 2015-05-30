@@ -5,4 +5,8 @@ $top_bars_offset  : $menubar_height + $statusbar_height + 10;
 body {
     padding-top: $top_bars_offset;
     overflow-y: scroll;
+
+    background-image: url(../assets/circles.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
 }

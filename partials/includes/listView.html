@@ -1,12 +1,14 @@
-<div ng-show="listView">
-    <div ng-repeat="post in $parent.filteredData = (data | filter:selectByTag) | filter:isSelectedCategory" class="col-md-4">
-        <div>
-            <a ng-href="{{post.url}}" target="_blank">
-                Title : {{post.title}}
-            </a>
-        </div>
-        <div ng-if="post.quotation">
-            quote : {{post.quotation}}
+<div ng-show="listView" class="list-view">
+    <div ng-repeat="post in $parent.filteredData = (data | filter:selectByTag) | filter:isSelectedCategory" class="col-md-4 list-item">
+        <div class="hxf-item-container">
+            <div>
+                <a ng-href="{{post.url}}" target="_blank">
+                    Title : {{post.title}}
+                </a>
+            </div>
+            <div ng-if="post.quotation">
+                quote : {{post.quotation}}
+            </div>
         </div>
     </div>
 </div>
