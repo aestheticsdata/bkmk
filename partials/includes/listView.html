@@ -1,5 +1,5 @@
 <div ng-show="listView">
-    <div ng-repeat="post in filteredData = (data | filter:selectByTag) | filter:isSelectedCategory" class="col-md-4">
+    <div ng-repeat="post in $parent.filteredData = (data | filter:selectByTag) | filter:isSelectedCategory" class="col-md-4">
         <div>
             <a ng-href="{{post.url}}" target="_blank">
                 Title : {{post.title}}

@@ -1,5 +1,5 @@
 <div ng-show="thumbView">
-    <div ng-repeat="post in data | filter:isSelectedCategory | filter:selectByTag" class="col-md-4">
+    <div ng-repeat="post in $parent.filteredData = (data | filter:selectByTag) | filter:isSelectedCategory" class="col-md-4">
         <div>
             Title : {{post.title}}
         </div>
