@@ -40,6 +40,17 @@ function ListController($scope, $log, $stateParams, DataService) {
         return tagAvailable;
     };
 
+    $scope.displayFullTitle = function (title) {
+
+        $log.debug(title);
+        $scope.popupTitle = true;
+        $scope.popupContent = title;
+    };
+
+    $scope.hidePopup = function () {
+
+        $scope.popupTitle = false;
+    };
 
     $scope.listView = true;
 

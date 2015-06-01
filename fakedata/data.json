@@ -142,5 +142,17 @@
         "weight"     : "common",
         "type"       : "website",
         "date"       : "2015-05-29T10:01:50.919Z"
+    },
+    {
+        "url"        : "https://www.youtube.com/watch?v=nmRmiu7jsbE",
+        "category"   : "Culture",
+        "title"      : "Fabrice Luchini fait le show chez Pivot ",
+        "quotation"  : "",
+        "thumbnail"  : "../fakedata/thumbnails/bouillondeculture.jpg",
+        "visibility" : "public",
+        "tags"       : ["culture", "pivot"],
+        "weight"     : "common",
+        "type"       : "video",
+        "date"       : "2015-05-30T21:31:49.307Z"
     }
 ]

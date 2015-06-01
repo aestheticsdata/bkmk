@@ -2,13 +2,14 @@
 
 angular.module('bkmk.controllers').controller('StatusBarController', StatusBarController);
 
-function StatusBarController($scope, $log, $state, $stateParams) {
+function StatusBarController($scope, $log, $state, $stateParams, ViewTypeState) {
 
     $scope.statusbar = {
         status      : $state.params.title + ($stateParams.category !== undefined ? ' '+$stateParams.category : ''),
         searchbox   : false,
         viewButtons : false,
-        viewType    : 'List',
+        viewType    : ViewTypeState.getState(),
+        stateChange : ViewTypeState.setState,
         tag         : ''
     };
 
