@@ -1,7 +1,9 @@
+$hxf-border-radius: 5px;
+
 @mixin hxf-item-container ($size) {
     .hxf-item-container {
         background-color: #bfbfbf;
-        border-radius: 5px;
+        border-radius: $hxf-border-radius;
         -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
         -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
         box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
@@ -13,6 +15,38 @@
         
         .quote {
             height: 30px;
+        }
+
+        a {
+            display: flex;
+        }
+        
+        .hxf-img-container {
+            display: flex;
+            width : 340px;
+            height: 340px;
+            margin: auto auto;
+            //background-color: rgba(9, 62, 97, 0.32);
+            border-radius: $hxf-border-radius;
+            //border: 1px solid #7d7d7d;
+            //background: repeating-linear-gradient(
+            //                0deg,
+            //                #606dbc,
+            //                #606dbc 2px,
+            //                #465298 2px,
+            //                #465298 4px
+            //);
+
+            img.centered {
+                -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+                box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+                //border: 2px solid #7d7d7d;
+                border-radius: $hxf-border-radius;
+                margin: auto auto;
+        }
+
+
         }
     }
 }
@@ -117,7 +151,7 @@
     .thumbnail-view {
 
         .thumbnail-item {
-            @include hxf-item-container(500px);
+            @include hxf-item-container(620px);
         }
     }
 
