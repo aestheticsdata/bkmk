@@ -60,6 +60,7 @@ function ListController($scope, $log, $stateParams, DataService) {
         try {
             $scope.listView  = ($scope.statusbar.viewType === 'List');
             $scope.thumbView = !$scope.listView;
+            //$scope.sortingOrder = $scope.statusbar.sortingOrder;
         } catch (e) {
             $log.debug('statusbar directive scope not ready');
         }

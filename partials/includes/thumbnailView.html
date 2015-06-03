@@ -1,5 +1,5 @@
 <div ng-show="thumbView" class="thumbnail-view">
-    <div ng-repeat="post in $parent.filteredData = (data | filter:selectByTag) | filter:isSelectedCategory" class="col-md-4 thumbnail-item">
+    <div ng-repeat="post in $parent.filteredData = (data | filter:selectByTag) | filter:isSelectedCategory | orderBy:'date':statusbar.getSortingOrder()" class="col-md-4 thumbnail-item">
         <div class="hxf-item-container">
             <div class="">
                 Title : {{post.title}}
