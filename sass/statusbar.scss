@@ -1,16 +1,39 @@
 .statusbar {
-    z-index: 1020;
-    position: fixed;
-    top: $menubar_height + 1;
-    height: $statusbar_height;
-    background-color: #565656;
-    color: yellowgreen;
-    width: 100%;
+    z-index          : 1020;
+    position         : fixed;
+    top              : $menubar_height + 1;
+    @media (min-width: 768px) {
+        height : $statusbar_height;
+    }
+    @media (max-width: 767px){
+        height : 180px;
+    }
+    background-color : #565656;
+    color            : yellowgreen;
+    width            : 100%;
+
+    padding-top   : $statusbar_padding_top;
+    padding-bottom: $statusbar_padding_bottom;
+
+    .search-box {
+        @media (max-width: 767px){
+            padding-top : 10px;
+        }
+    }
+
+    .view-type {
+        @media (max-width: 767px){
+            padding-top : 10px;
+        }
+    }
 
     .date-order {
         button {
             text-align: left;
             width: 100px;
+        }
+        @media (max-width: 767px){
+            padding-top : 10px;
         }
     }
 

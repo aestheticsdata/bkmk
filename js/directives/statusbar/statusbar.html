@@ -4,25 +4,25 @@
 
         <div class="row">
 
-            <div class="col-md-6">
+            <div class="col-sm-6">
 
-                <span class="col-md-6">
+                <span class="col-sm-6 status">
                     {{statusbar.status}}
                 </span>
 
-                <div class="input-group col-md-6" ng-show="statusbar.searchbox">
+                <div class="input-group col-sm-6 search-box" ng-show="statusbar.searchbox">
                     <span class="input-group-addon">filter results</span>
                     <input type="text" class="form-control" placeholder="tag" aria-describedby="basic-addon1" ng-model="statusbar.tag">
                 </div>
 
             </div>
 
-            <div class="btn-group col-md-4" ng-show="statusbar.viewButtons">
+            <div class="btn-group col-sm-4 view-type" ng-show="statusbar.viewButtons">
                 <label class="btn btn-success" ng-model="statusbar.viewType" btn-radio="'List'" ng-click="statusbar.stateChange('List')">List view</label>
                 <label class="btn btn-success" ng-model="statusbar.viewType" btn-radio="'Thumbnail'" ng-click="statusbar.stateChange('Thumbnail')">Thumbnail view</label>
             </div>
 
-            <div class="col-md-2 date-order" ng-show="statusbar.dateOrderingButton">
+            <div class="col-sm-2 date-order" ng-show="statusbar.dateOrderingButton">
                 <button type="button" class="btn btn-default" ng-click="statusbar.reverseDateOrder()">
                     <span class="glyphicon glyphicon-sort" aria-hidden="true"></span> Date : <span>{{statusbar.getOrderName()}}</span>
                 </button>

@@ -1,11 +1,19 @@
-$menubar_height   : 50px;
-$statusbar_height : 40px;
-$top_bars_offset  : $menubar_height + $statusbar_height + 20;
+$menubar_height           : 50px;
+$statusbar_height         : 40px;
+$statusbar_padding_top    : 13px;
+$statusbar_padding_bottom : 47px;
+
+$top_bars_offset  : $menubar_height + $statusbar_height + $statusbar_padding_top + $statusbar_padding_bottom;
 
 $hxf-border-radius: 5px;
 
 body {
-    padding-top: $top_bars_offset;
+    @media (min-width: 768px) {
+        padding-top: $top_bars_offset;
+    }
+    @media (max-width: 767px){
+        padding-top: $top_bars_offset + 110;
+    }
     overflow-y: scroll;
 
     //background-image: url(../assets/circles.png);
