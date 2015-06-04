@@ -1,7 +1,7 @@
 .home {
 
     .thumbnail-item {
-        @include hxf-item-container(620px);
+        @include hxf-item-container($thumbnail_item_height);
     }
 
     @include quoteTooltip;

@@ -1,24 +1,21 @@
 <div class="hxf-item-container">
-    <div class="">
-        Title : {{post.title}}
+    <div class="title">
+        {{post.title | uppercase}}
+        <div ng-show="post.type === 'website'" class="link-type"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></div>
+        <div ng-show="post.type === 'video'"   class="link-type"><span class="glyphicon glyphicon-film" aria-hidden="true"></span></div>
     </div>
-
-    <hr/>
 
     <div class="quote">
 
-
         <div ng-if="post.quotation" class="wrapper">
-            quote : {{post.quotation | limitTo:80}}...
+            {{post.quotation | limitTo:80}}...
             <div class="tooltip">{{post.quotation}}</div>
         </div>
         <div ng-if="!post.quotation">
-            quote : no quote
+            <div class="no-quote">no quote</div>
         </div>
 
     </div>
-
-    <hr/>
 
     <a ng-href="{{post.url}}" target="_blank">
         <div class="hxf-img-container">
@@ -26,12 +23,5 @@
         </div>
     </a>
 
-    <hr/>
-
-    <div ng-show="post.type === 'website'">type : <span class="glyphicon glyphicon-globe" aria-hidden="true"></span></div>
-    <div ng-show="post.type === 'video'">type : <span class="glyphicon glyphicon-film" aria-hidden="true"></span></div>
-
-    <hr/>
-
-    <div class="tags">tags : <span ng-repeat="tag in post.tags">#{{tag}} </span></div>
+    <div class="tags"><span ng-repeat="tag in post.tags" class="tags">#{{tag}} </span></div>
 </div>

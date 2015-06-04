@@ -50,8 +50,8 @@
     {
         "url"        : "http://www.undefinednull.com/2014/02/11/mastering-the-scope-of-a-directive-in-angularjs/",
         "category"   : "JavaScript",
-        "title"      : "Mastering the Scope of the Directives in AngularJS",
-        "quotation"  : "",
+        "title"      : "Scope of the Directives in AngularJS",
+        "quotation"  : "Mastering the Scope of the Directives in AngularJS",
         "thumbnail"  : "../fakedata/thumbnails/no-thumbnail.png",
         "visibility" : "public",
         "tags"       : ["angularjs", "javascript", "tutorial", "scope"],
@@ -110,8 +110,8 @@
     {
         "url"        : "https://github.com/razum2um/awesome-clojure",
         "category"   : "Programming",
-        "title"      : "A curated list of awesome Clojure libraries and resources",
-        "quotation"  : "",
+        "title"      : "Clojure libraries and resources",
+        "quotation"  : "A curated list of awesome Clojure libraries and resources",
         "thumbnail"  : "../fakedata/thumbnails/no-thumbnail.png",
         "visibility" : "public",
         "tags"       : ["clojure", "programming", "tutorial"],

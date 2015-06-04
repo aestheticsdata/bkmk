@@ -15,6 +15,10 @@
     padding-top   : $statusbar_padding_top;
     padding-bottom: $statusbar_padding_bottom;
 
+    .status {
+        padding-left: 0;
+    }
+
     .search-box {
         @media (max-width: 767px){
             padding-top : 10px;
