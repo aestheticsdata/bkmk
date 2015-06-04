@@ -1,6 +1,6 @@
 $menubar_height   : 50px;
 $statusbar_height : 40px;
-$top_bars_offset  : $menubar_height + $statusbar_height + 10;
+$top_bars_offset  : $menubar_height + $statusbar_height + 20;
 
 body {
     padding-top: $top_bars_offset;
