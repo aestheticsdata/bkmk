@@ -2,22 +2,48 @@
 
 <status-bar></status-bar>
 
-<div class="container">
+<div class="container-fluid">
     <div class="home">
         <div class="col-md-12">
+            <div ng-repeat="post in data | filter:isHeadline" class="col-md-4 thumbnail-item">
+                <div class="hxf-item-container">
+                    <div class="">
+                        Title : {{post.title}}
+                    </div>
 
-            <div ng-repeat="post in data | filter:isHeadline" class="col-md-4">
-                <div>
-                    Title : {{post.title}}
+                    <hr/>
+
+                    <div class="quote">
+
+
+                        <div ng-if="post.quotation" class="wrapper">
+                            quote : {{post.quotation | limitTo:80}}...
+                            <div class="tooltip">{{post.quotation}}</div>
+                        </div>
+                        <div ng-if="!post.quotation">
+                            quote : no quote
+                        </div>
+
+                    </div>
+
+                    <hr/>
+
+                    <a ng-href="{{post.url}}" target="_blank">
+                        <div class="hxf-img-container">
+                            <img ng-src="{{post.thumbnail}}" alt="" class="centered"/>
+                        </div>
+                    </a>
+
+                    <hr/>
+
+                    <div ng-show="post.type === 'website'">type : <span class="glyphicon glyphicon-globe" aria-hidden="true"></span></div>
+                    <div ng-show="post.type === 'video'">type : <span class="glyphicon glyphicon-film" aria-hidden="true"></span></div>
+
+                    <hr/>
+
+                    <div class="tags">tags : <span ng-repeat="tag in post.tags">#{{tag}} </span></div>
                 </div>
-                <div ng-if="post.quotation">
-                    quote : {{post.quotation}}
-                </div>
-                <a ng-href="{{post.url}}" target="_blank">
-                    <img ng-src="{{post.thumbnail}}" alt="" width="200" height="200"/>
-                </a>
             </div>
-
         </div>
     </div>
 
