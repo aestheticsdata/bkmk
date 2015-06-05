@@ -4,7 +4,7 @@ angular.module('bkmk.services').factory('DataService', DataService);
 
 function DataService($http) {
 
-    var _category = ['Programming', 'JavaScript', 'Cuisine', '8bit', 'Divers', 'Sante', 'Jobs'];
+    var _category = ['Programming', 'JavaScript', 'Cuisine', '8bit', 'Divers', 'Sante', 'Jobs', 'Css'];
 
     var ds = {
         getData     : _getData,

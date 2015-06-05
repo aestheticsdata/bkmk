@@ -2,7 +2,12 @@ $separator-color: #696969;
 $title-bg-color: #ebfb0a;
 $hxf-custom-media-query-size: "(min-width: 989px) and (max-width: 1330px), (max-width: 440px)";
 
-$background-colors-list: #c55403 #a9b200 #20803c #00698d #8b0a52;
+//$background-colors-list: #c55403 #a9b200 #20803c #00698d #8b0a52;
+$background-colors-list: #78c0e0 #449dd1 #192bc2 #150578 #0e0e52;   // blue
+//$background-colors-list: #9e0031 #8e0045 #770058 #600047 #44001a;   // red
+//$background-colors-list: #b80c09 #6b2b06 #e5e7e6 #b7b5b3 #141301;   // red grey
+//$background-colors-list: #0d0630 #18314f #384e77 #8bbeb2 #e6f9af;   // blue cream
+
 //$background-colors-list: orange yellow green deepskyblue deeppink;
 
 @mixin hxf-item-container ($size) {
@@ -134,7 +139,8 @@ $background-colors-list: #c55403 #a9b200 #20803c #00698d #8b0a52;
             &.item-#{$i} {
                 background-color: nth($background-colors-list, $i);
                 //border: 1px solid darken(nth($background-colors-list, $i), 10%);
-                color: lighten(nth($background-colors-list, $i), 15%);
+                //color: lighten(nth($background-colors-list, $i), 15%);
+                color: rgba(255,255,255,0.5);
             }
         }
         /////////////////////////////////////////////////////////////////////////////////////////////////
