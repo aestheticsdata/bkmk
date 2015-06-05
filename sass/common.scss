@@ -2,6 +2,8 @@ $menubar_height           : 50px;
 $statusbar_height         : 40px;
 $statusbar_padding_top    : 13px;
 $statusbar_padding_bottom : 47px;
+$bg-color                 : #7A7E80; // grey
+//$bg-color                 : #0ae; // blue
 
 $top_bars_offset  : $menubar_height + $statusbar_height + $statusbar_padding_top + $statusbar_padding_bottom;
 
@@ -23,7 +25,7 @@ body {
     background-attachment: fixed;
 
     // blue stripes
-    background-color: #0ae;
+    background-color: $bg-color;
     //background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.5, transparent), to(transparent));
     //background-image: -moz-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
     //background-image: -o-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);

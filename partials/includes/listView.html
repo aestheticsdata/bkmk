@@ -1,6 +1,6 @@
 <div ng-show="listView" class="list-view">
     <div ng-repeat="post in $parent.filteredData = (data | filter:selectByTag) | filter:isSelectedCategory" class="col-md-4 list-item">
-        <div class="hxf-item-container">
+        <div class="hxf-item-container-list" ng-class="getIndex($index)">
             <div>
                 <a ng-href="{{post.url}}" target="_blank">
                     Title : {{post.title}}

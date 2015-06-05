@@ -1,8 +1,13 @@
 $separator-color: #696969;
 $title-bg-color: #ebfb0a;
+$hxf-custom-media-query-size: "(min-width: 989px) and (max-width: 1330px), (max-width: 440px)";
+
+$background-colors-list: orange yellow green deepskyblue deeppink;
+
 
 @mixin hxf-item-container ($size) {
-    .hxf-item-container {
+    .hxf-item-container-thumbnail {
+
         background-color: #bfbfbf;
         border-radius: $hxf-border-radius;
         -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
@@ -19,13 +24,16 @@ $title-bg-color: #ebfb0a;
         font-size: 13px;
 
         .title {
-            padding-left: 3px;
-            padding-top: 3px;
-            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-top: 8px;
+            padding-bottom: 8px;
             font-size  : 16px;
             //border-bottom: 1px solid $title-bg-color;
             background-color: $title-bg-color;
             border-radius: 5px;
+            @media #{$hxf-custom-media-query-size} {
+                font-size: 10px;
+            }
             //border-top-left-radius: 5px;
             //border-top-right-radius: 5px;
         }
@@ -33,16 +41,32 @@ $title-bg-color: #ebfb0a;
         .link-type {
             float: right;
             padding-right: 10px;
+            padding-left: 10px;
+            border-left: 2px solid yellowgreen;
+            height: 41px;
+            @media #{$hxf-custom-media-query-size} {
+                height: 32px;
+            }
+            margin-top: -10px;
+            span {
+                padding-top: 12px;
+            }
         }
 
         .quote {
             height: 50px;
             padding: 5px 10px 10px 0px;
             border-bottom: 1px solid $separator-color;
+
+            .wrapper {
+                padding-left: 10px;
+            }
+
             .no-quote {
                 font-style: italic;
                 color: #868686;
                 text-align: center;
+                margin-top: 10px;
             }
         }
 
@@ -50,10 +74,14 @@ $title-bg-color: #ebfb0a;
             padding-top: 10px;
             padding-left: 10px;
             border-top: 1px solid $separator-color;
+            @media #{$hxf-custom-media-query-size} {
+                font-size: 11px;
+            }
         }
 
         a {
             display: flex;
+            outline: 0; // remove dotted border ( https://css-tricks.com/removing-the-dotted-outline/ )
         }
 
         .hxf-img-container {
@@ -73,16 +101,41 @@ $title-bg-color: #ebfb0a;
             //);
 
             img.centered {
-                -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-                -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-                box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-                //border: 2px solid #7d7d7d;
+                //-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+                //-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+                //box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+                //
                 border-radius: $hxf-border-radius;
                 margin: auto auto;
             }
 
 
         }
+    }
+
+    .hxf-item-container-list {
+        //background-color: red;
+        border-radius: $hxf-border-radius;
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        height: $size;
+        border: 1px solid #aeaeae;
+        padding: 5px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        color: #3e3e3e;
+
+        font-family: "Open Sans";
+        font-size: 13px;
+
+        // http://benfrain.com/working-with-lists-and-each-loops-in-sass-with-the-index-and-nth-function/
+        @for $i from 1 through length($background-colors-list) {
+            &.item-#{$i} {
+                background-color: nth($background-colors-list, $i);
+            }
+        }
+        /////////////////////////////////////////////////////////////////////////////////////////////////
     }
 }
 

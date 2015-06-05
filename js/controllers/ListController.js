@@ -17,6 +17,10 @@ function ListController($scope, $log, $stateParams, DataService) {
 
     $scope.tagSearching = false;
 
+    $scope.getIndex = function (idx) {
+        return 'item-'+((idx%5)+1);
+    };
+
     $scope.isActive = function (category) {
 
         return $stateParams.category === category;
