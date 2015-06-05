@@ -2,8 +2,8 @@ $separator-color: #696969;
 $title-bg-color: #ebfb0a;
 $hxf-custom-media-query-size: "(min-width: 989px) and (max-width: 1330px), (max-width: 440px)";
 
-$background-colors-list: orange yellow green deepskyblue deeppink;
-
+$background-colors-list: #c55403 #a9b200 #20803c #00698d #8b0a52;
+//$background-colors-list: orange yellow green deepskyblue deeppink;
 
 @mixin hxf-item-container ($size) {
     .hxf-item-container-thumbnail {
@@ -114,13 +114,13 @@ $background-colors-list: orange yellow green deepskyblue deeppink;
     }
 
     .hxf-item-container-list {
-        //background-color: red;
         border-radius: $hxf-border-radius;
-        -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+
+        //-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        //-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        //box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+
         height: $size;
-        border: 1px solid #aeaeae;
         padding: 5px;
         overflow: hidden;
         margin-bottom: 30px;
@@ -133,6 +133,8 @@ $background-colors-list: orange yellow green deepskyblue deeppink;
         @for $i from 1 through length($background-colors-list) {
             &.item-#{$i} {
                 background-color: nth($background-colors-list, $i);
+                //border: 1px solid darken(nth($background-colors-list, $i), 10%);
+                color: lighten(nth($background-colors-list, $i), 15%);
             }
         }
         /////////////////////////////////////////////////////////////////////////////////////////////////
