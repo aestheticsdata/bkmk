@@ -7,7 +7,11 @@
             <div class="col-sm-6">
 
                 <span class="col-sm-6 status">
-                    {{statusbar.status}}
+                    <span class="glyphicon glyphicon-home" ng-show="statusbar.status == 'Home'"></span>
+                    <span class="glyphicon glyphicon-edit" ng-show="statusbar.status == 'Admin'"></span>
+                    <span class="glyphicon glyphicon-info-sign" ng-show="statusbar.status == 'About'"></span>
+                    <span class="glyphicon glyphicon-list" ng-show="statusbar.status.indexOf('List') != -1"></span>
+                    / {{statusbar.status | uppercase}}
                 </span>
 
                 <div class="input-group col-sm-6 search-box" ng-show="statusbar.searchbox">
