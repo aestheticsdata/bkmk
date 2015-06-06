@@ -17,8 +17,9 @@ function ListController($scope, $log, $stateParams, DataService) {
 
     $scope.tagSearching = false;
 
-    $scope.getIndex = function (idx) {
-        return 'item-'+((idx%5)+1);
+    // contrived function for returning two class. ng-class combining map array function is not working
+    $scope.getClassName = function (idx) {
+        return 'item-'+((idx%5)+1)+' '+(idx == highlightIndex ? 'highlight' : '');
     };
 
     $scope.isActive = function (category) {
@@ -58,6 +59,13 @@ function ListController($scope, $log, $stateParams, DataService) {
 
     $scope.listView = true;
 
+    var highlightIndex = -1;
+    $scope.showHighlight = function (index) {
+        highlightIndex = index;
+    };
+    $scope.hideHighlight = function (index) {
+        highlightIndex = -1;
+    };
 
     $scope.$watch('statusbar.viewType', function () {
 

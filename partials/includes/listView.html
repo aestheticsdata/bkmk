@@ -1,16 +1,23 @@
 <div ng-show="listView" class="list-view">
     <div ng-repeat="post in $parent.filteredData = (data | filter:selectByTag) | filter:isSelectedCategory" class="col-md-4 list-item">
-        <div class="hxf-item-container-list" ng-class="getIndex($index)">
-            <div>
-                <a ng-href="{{post.url}}" target="_blank">
-                    Title : {{post.title}}
-                </a>
+        <div class="hxf-item-container-list" ng-class="getClassName($index)">
+        <!--<div class="hxf-item-container-list" ng-class="[getClassName($index), {highlight: highlighted}]">-->
+            <div class="title" >
+                <span class="glyphicon glyphicon-globe" ng-show="post.type == 'website'"></span>
+                <span class="glyphicon glyphicon-film"  ng-show="post.type == 'video'"></span>
+
+                <div class="text-content">
+                    <a ng-href="{{post.url}}" target="_blank" ng-mouseenter="showHighlight($index)" ng-mouseleave="hideHighlight($index)">
+                        {{post.title | uppercase}}
+                    </a>
+                </div>
             </div>
-            <div ng-if="post.quotation">
-                quote : {{post.quotation | limitTo:80}}...
+
+            <div ng-if="post.quotation"  class="quote">
+                {{post.quotation | limitTo:80}}...
             </div>
-            <div ng-if="!post.quotation">
-                quote : no quote
+            <div ng-if="!post.quotation" class="quote no-quote">
+                no quote
             </div>
         </div>
     </div>
