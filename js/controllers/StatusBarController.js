@@ -18,6 +18,10 @@ function StatusBarController($scope, $log, $state, $stateParams, ViewTypeState) 
         getOrderName       : function () {return this.sortingOrder ? 'asc' : 'desc'}
     };
 
-    ($state.params.title === 'List') && ($scope.statusbar.searchbox = true) && ($scope.statusbar.viewButtons = true) && ($scope.statusbar.dateOrderingButton = true);
 
+    if ($state.params.title === 'List') {
+        $scope.statusbar.searchbox = true;
+        $scope.statusbar.viewButtons = true;
+        $scope.statusbar.dateOrderingButton = true;
+    }
 }

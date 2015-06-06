@@ -22,7 +22,7 @@
                 <label class="btn btn-success" ng-model="statusbar.viewType" btn-radio="'Thumbnail'" ng-click="statusbar.stateChange('Thumbnail')">Thumbnail view</label>
             </div>
 
-            <div class="col-sm-2 date-order" ng-show="statusbar.dateOrderingButton">
+            <div class="col-sm-2 date-order" ng-show="statusbar.dateOrderingButton && statusbar.viewType == 'Thumbnail'">
                 <button type="button" class="btn btn-default" ng-click="statusbar.reverseDateOrder()">
                     <span class="glyphicon glyphicon-sort" aria-hidden="true"></span> Date : <span>{{statusbar.getOrderName()}}</span>
                 </button>
