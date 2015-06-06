@@ -4,3 +4,16 @@
 //    font-weight: 300;
 //    //src: local("Open Sans Light"), local("OpenSans-Light"), url("http://demo.flatlogic.com/sing-wrapbootstrap/angular/css/fonts/google/open-sans-light.woff") format("woff");
 //}
+@font-face {
+    font-family: 'Lato';
+    src: url('../assets/fonts/Lato/Lato-Hairline.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../assets/fonts/Lato/Lato-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+}
