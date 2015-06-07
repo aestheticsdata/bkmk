@@ -166,5 +166,17 @@
         "weight"     : "common",
         "type"       : "website",
         "date"       : "2015-06-05T22:37:02.405Z"
+    },
+    {
+        "url"        : "http://www.zx-spectrum.cz/data/maps/map.php?id=KnightTyme48K.png",
+        "category"   : "8bit",
+        "title"      : "Knight Tyme - zx spectrum",
+        "quotation"  : "Knight Tyme is a computer game released for the ZX Spectrum, Amstrad CPC, Commodore 64 and MSX compatibles in 1986. It was published by Mastertronic as part of their Mastertronic Added Dimension label. Two versions of the ZX Spectrum release were published: a full version for the 128K Spectrum (which was published first) and a cut-down version for the 48K Spectrum that removed the music, some graphics and some locations (which was published later).",
+        "thumbnail"  : "../fakedata/thumbnails/Knight_tyme_3_zx_spectrum.png",
+        "visibility" : "public",
+        "tags"       : ["knighttyme", "8bit", "game"],
+        "weight"     : "common",
+        "type"       : "website",
+        "date"       : "2015-06-07T10:01:40.014Z"
     }
 ]
