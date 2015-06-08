@@ -1,6 +1,6 @@
 <div class="hxf-item-container-thumbnail">
     <div class="title">
-        {{post.title | uppercase}}
+        {{::post.title | uppercase}}
         <div ng-show="post.type === 'website'" class="link-type globe"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></div>
         <div ng-show="post.type === 'video'"   class="link-type film"><span class="glyphicon glyphicon-film" aria-hidden="true"></span></div>
     </div>
@@ -8,8 +8,8 @@
     <div class="quote">
 
         <div ng-if="post.quotation" class="wrapper">
-            {{post.quotation | limitTo:80}}...
-            <div class="tooltip">{{post.quotation}}</div>
+            {{::post.quotation | limitTo:80}}...
+            <div class="tooltip">{{::post.quotation}}</div>
         </div>
         <div ng-if="!post.quotation">
             <div class="no-quote">no quote</div>
@@ -17,11 +17,11 @@
 
     </div>
 
-    <a ng-href="{{post.url}}" target="_blank">
+    <a ng-href="{{::post.url}}" target="_blank">
         <div class="hxf-img-container">
-            <img ng-src="{{post.thumbnail}}" alt="" class="centered"/>
+            <img ng-src="{{::post.thumbnail}}" alt="" class="centered"/>
         </div>
     </a>
 
-    <div class="tags"><span ng-repeat="tag in post.tags" class="tags">#{{tag}} </span></div>
+    <div class="tags"><span ng-repeat="tag in post.tags" class="tags">#{{::tag}} </span></div>
 </div>
