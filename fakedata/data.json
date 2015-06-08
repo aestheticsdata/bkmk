@@ -178,5 +178,41 @@
         "weight"     : "common",
         "type"       : "website",
         "date"       : "2015-06-07T10:01:40.014Z"
+    },
+    {
+        "url"        : "http://spectrummagic.emuunlim.com/",
+        "category"   : "8bit",
+        "title"      : "spectrum magic",
+        "quotation"  : "Spectrum Magic contains many of the best games ever written for the ZX Spectrum for download. A brief review of each game is included, along with a screenshot, to try to guide those who have never played on a Speccy to find games you will enjoy.",
+        "thumbnail"  : "../fakedata/thumbnails/spectrummagic.png",
+        "visibility" : "public",
+        "tags"       : ["8bit", "game"],
+        "weight"     : "common",
+        "type"       : "website",
+        "date"       : "2015-06-07T10:23:20.173Z"
+    },
+    {
+        "url"        : "http://www.cpc-power.com/index.php?page=detail&num=974",
+        "category"   : "8bit",
+        "title"      : "cpc power - Ghosts'N Goblins",
+        "quotation"  : "",
+        "thumbnail"  : "../fakedata/thumbnails/cpc_power-ghostsngoblins.png",
+        "visibility" : "public",
+        "tags"       : ["8bit", "game"],
+        "weight"     : "common",
+        "type"       : "website",
+        "date"       : "2015-06-08T09:47:20.110Z"
+    },
+    {
+        "url"        : "http://www.zee-3.com/pickfordbros/softography/index.php?game=4",
+        "category"   : "8bit",
+        "title"      : "Pickford Bros' - Ghosts'N Goblins",
+        "quotation"  : "",
+        "thumbnail"  : "../fakedata/thumbnails/PickfordBros_ghostsngoblins.png",
+        "visibility" : "public",
+        "tags"       : ["8bit", "game"],
+        "weight"     : "common",
+        "type"       : "website",
+        "date"       : "2015-06-08T09:51:38.451Z"
     }
 ]
