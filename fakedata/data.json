@@ -214,5 +214,41 @@
         "weight"     : "common",
         "type"       : "website",
         "date"       : "2015-06-08T09:51:38.451Z"
+    },
+    {
+        "url"        : "http://nodeschool.io/",
+        "category"   : "JavaScript",
+        "title"      : "nodeschool",
+        "quotation"  : "Open source workshops that teach web software skills. Do them on your own or at a workshop nearby.",
+        "thumbnail"  : "../fakedata/thumbnails/nodeschool.png",
+        "visibility" : "public",
+        "tags"       : ["javascript", "node", "tutorial"],
+        "weight"     : "headline",
+        "type"       : "website",
+        "date"       : "2015-06-13T09:09:29.140Z"
+    },
+    {
+        "url"        : "http://maps.speccy.cz/map.php?id=JetSetWillySpectrumComputing&sort=2&part=5&ath=",
+        "category"   : "8bit",
+        "title"      : "jet set willy map",
+        "quotation"  : "",
+        "thumbnail"  : "../fakedata/thumbnails/jetsetwilly_map.png",
+        "visibility" : "public",
+        "tags"       : ["8bit", "game"],
+        "weight"     : "headline",
+        "type"       : "website",
+        "date"       : "2015-06-13T10:10:31.786Z"
+    },
+    {
+        "url"        : "http://www.cufonfonts.com/en/font/13217/avenir-next-lt-pro",
+        "category"   : "Fonts",
+        "title"      : "avenir next lt font",
+        "quotation"  : "",
+        "thumbnail"  : "../fakedata/thumbnails/avenir_next_font.png",
+        "visibility" : "public",
+        "tags"       : ["font"],
+        "weight"     : "common",
+        "type"       : "font",
+        "date"       : "2015-06-13T10:10:31.786Z"
     }
 ]

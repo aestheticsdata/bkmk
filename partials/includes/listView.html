@@ -5,6 +5,7 @@
             <div class="title" >
                 <span class="glyphicon glyphicon-globe" ng-show="post.type == 'website'"></span>
                 <span class="glyphicon glyphicon-film"  ng-show="post.type == 'video'"></span>
+                <span class="glyphicon glyphicon-font"  ng-show="post.type == 'font'"></span>
 
                 <div class="text-content">
                     <a ng-href="{{post.url}}" target="_blank" ng-mouseenter="showHighlight($index)" ng-mouseleave="hideHighlight($index)">

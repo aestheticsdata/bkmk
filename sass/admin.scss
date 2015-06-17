@@ -1,0 +1,67 @@
+.admin {
+    //background-image: url(../assets/img/sunset_400_11.jpg);
+    //background-repeat: no-repeat;
+    //background-size: cover;
+
+
+    .panel-default {
+        opacity: 0.93;
+        margin-top:30px;
+    }
+
+    .form-group.last {
+        margin-bottom:0px;
+    }
+
+    .panel-hxf-heading {
+        background-color: #337AB7;
+        color: #fff;
+    }
+
+    .panel-hxf-footer {
+        // needs latest Compass, add '@import "compass"' to your scss
+        //@include background-image(linear-gradient(left,  #1e5799 0%,#aa3895 100%));
+
+        font-weight: 300;
+
+        .text-center {
+            span {
+                top: 2px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .title-hxf {
+        font-family: Lato;
+        font-size: 38px;
+        font-weight: 100;
+        color: #fff;
+    }
+
+    .title-hxf-bold {
+        font-family: Lato;
+        font-weight: 300;
+    }
+
+    .wrong-hxf {
+        font-size: 10px;
+        color: #f00;
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+    a:active {
+        text-decoration: none;
+    }
+
+    a:visited {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+}
