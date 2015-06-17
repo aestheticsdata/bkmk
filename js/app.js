@@ -31,7 +31,12 @@ angular.module('bkmk', ['ui.bootstrap', 'bkmk.directives', 'bkmk.controllers', '
                 url         : '/list/:category',
                 templateUrl : 'partials/list.html',
                 controller  : 'ListController',
-                params      : {title : 'List'}
+                params      : {title : 'List'},
+                resolve     : {
+                    ds: function (DataService) {
+                        return DataService;
+                    }
+                }
             });
 
         $urlRouterProvider.otherwise('/home');

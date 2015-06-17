@@ -2,11 +2,11 @@
 
 angular.module('bkmk.controllers').controller('ListController', ListController);
 
-function ListController($scope, $log, $stateParams, DataService) {
+function ListController($scope, $log, $stateParams, ds) { // ds is DataService comming from ui-router state resolve
 
     $log.debug('ListController');
 
-    DataService.getData().success(function (data) {
+    ds.getData().success(function (data) {
 
         $log.debug(data);
 
