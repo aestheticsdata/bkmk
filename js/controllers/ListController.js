@@ -6,12 +6,16 @@ function ListController($scope, $log, $stateParams, ds) { // ds is DataService c
 
     $log.debug('ListController');
 
-    ds.getData().success(function (data) {
+    //DataService.getData().success(function (data) {
+    //
+    //    $log.debug(data);
+    //
+    //    $scope.data = data;
+    //});
 
-        $log.debug(data);
+    $log.debug('ds : ', ds.data);
 
-        $scope.data = data;
-    });
+    $scope.data = ds.data;
 
     $stateParams.category === 'all' ? $scope.isListAll = true : $scope.isCategory = true;
 

@@ -34,7 +34,9 @@ angular.module('bkmk', ['ui.bootstrap', 'bkmk.directives', 'bkmk.controllers', '
                 params      : {title : 'List'},
                 resolve     : {
                     ds: function (DataService) {
-                        return DataService;
+                        return DataService.getData().success(function (data) {
+                            return data;
+                        });
                     }
                 }
             });
