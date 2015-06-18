@@ -10,7 +10,14 @@
 
         <div ng-if="post.quotation" class="wrapper">
             {{::post.quotation | limitTo:80}}...
-            <div class="tooltip">{{::post.quotation}}</div>
+            <div class="tooltip">
+                <div>{{::post.quotation}}</div>
+                <div ng-show="post.quotationSource != ''">
+                    <hr/>
+                    <div class="quotation-source">quotation source :</div>
+                    <a ng-href="{{::post.quotationSource}}" target="_blank">{{::post.quotationSource}}</a>
+                </div>
+            </div>
         </div>
         <div ng-if="!post.quotation">
             <div class="no-quote">no quote</div>

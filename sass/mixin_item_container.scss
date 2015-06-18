@@ -239,6 +239,32 @@ $background-colors-list: #78c0e0 #449dd1 #192bc2 #150578 #0e0e52;   // blue
         -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
         -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
         box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+
+        .quotation-source {
+            font-style: italic;
+            font-size: 11px;
+            color: #ffef42;
+        }
+
+        a {
+            &:hover {
+                color: #e4e4e4 !important; // !important as a hack to force color change on hover
+                text-decoration: underline;
+            }
+
+            &:active {
+                color: #e4e4e4;
+            }
+
+            &:visited {
+                color: #c2c2c2;
+            }
+
+            &:link {
+                color: #c2c2c2;
+            }
+        }
+
     }
 
     /* This bridges the gap so you can mouse into the tooltip without it disappearing */
