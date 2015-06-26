@@ -24,6 +24,7 @@
     "ng-annotate": "^0.15.4"
   },
   "devDependencies": {
+    "gulp-babel": "^5.1.0",
     "gulp-plumber": "^1.0.1"
   }
 }

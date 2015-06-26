@@ -3,6 +3,7 @@ var gulp        = require('gulp'),
     sass        = require('gulp-sass'),
     connect     = require('gulp-connect'),
     ngAnnotate  = require('gulp-ng-annotate'),
+    babel       = require('gulp-babel'),
     rename      = require('gulp-rename'),
     uglify      = require('gulp-uglify'),
     htmlreplace = require('gulp-html-replace'),
@@ -56,6 +57,7 @@ gulp.task('concatSrc', function () {
         './js/services/*.js',
         './js/app.js'
     ])
+        .pipe(babel())
         .pipe(concat('build.js'))
         .pipe(gulp.dest('./build/'));
 });

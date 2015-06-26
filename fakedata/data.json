@@ -297,5 +297,44 @@
         "weight"           : "common",
         "type"             : "website",
         "date"             : "2015-06-18T12:35:06.749Z"
+    },
+    {
+        "url"              : "https://www.shadertoy.com/view/XlfXR4",
+        "category"         : "JavaScript",
+        "title"            : "shadertoy",
+        "quotation"        : "",
+        "quotationSource" : "",
+        "thumbnail"        : "../fakedata/thumbnails/shadertoy.png",
+        "visibility"       : "public",
+        "tags"             : ["javascript", "webgl"],
+        "weight"           : "common",
+        "type"             : "website",
+        "date"             : "2015-06-19T09:02:55.981Z"
+    },
+    {
+        "url"              : "https://unpm.nodesource.com/",
+        "category"         : "JavaScript",
+        "title"            : "understanding npm",
+        "quotation"        : "Lots of packages means lots of downloads, too. In the last week alone, there's been a total of 399,588,376 package downloads from the registry. ",
+        "quotationSource"  : "",
+        "thumbnail"        : "../fakedata/thumbnails/understanding_npm.png",
+        "visibility"       : "public",
+        "tags"             : ["javascript", "npm"],
+        "weight"           : "common",
+        "type"             : "website",
+        "date"             : "2015-06-19T09:13:32.049Z"
+    },
+    {
+        "url"              : "https://psychologieagile.wordpress.com/2015/06/15/la-tyrannie-de-la-pensee-positive/",
+        "category"         : "Divers",
+        "title"            : "la tyrannie de la pensée positive",
+        "quotation"        : "Il n’y a pas de problème, il n’y a que des solutions ! Il y a quelques jours, quelqu’un m’a dit très sérieusement: « il n’y a pas de problème, il n’y a que des solutions ! ».A ce moment-là, je voulais lui décrire ma situation personnelle pour lui faire comprendre qu’il existe des situations qui n’ont pas solution, mais j’ai réalisé qu’il n’est pas à ma place, alors sa compréhension de ma situation aurait été superficielle.",
+        "quotationSource"  : "",
+        "thumbnail"        : "../fakedata/thumbnails/no-thumbnail.png",
+        "visibility"       : "public",
+        "tags"             : ["psychologie"],
+        "weight"           : "common",
+        "type"             : "website",
+        "date"             : "2015-06-23T20:30:02.786Z"
     }
 ]
