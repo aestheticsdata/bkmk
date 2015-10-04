@@ -10,11 +10,11 @@ angular.module('bkmk', ['ui.bootstrap', 'bkmk.directives', 'bkmk.controllers', '
                 url         : '/home',
                 views       : {
                     'menubar' : {
-                        templateUrl : 'js/directives/menubar/menubar.html',
+                        templateUrl : 'partials/menubar/menubar.html',
                         controller  : 'MenuBarController'
                     },
                     'statusbar' : {
-                        templateUrl : 'js/directives/statusbar/statusbar.html',
+                        templateUrl : 'partials/statusbar/statusbar.html',
                         controller  : 'StatusBarController'
                     },
                     'content' : {
@@ -29,11 +29,11 @@ angular.module('bkmk', ['ui.bootstrap', 'bkmk.directives', 'bkmk.controllers', '
                 url         : '/admin',
                 views       : {
                     'menubar' : {
-                        templateUrl : 'js/directives/menubar/menubar.html',
+                        templateUrl : 'partials/menubar/menubar.html',
                         controller  : 'MenuBarController'
                     },
                     'statusbar' : {
-                        templateUrl : 'js/directives/statusbar/statusbar.html',
+                        templateUrl : 'partials/statusbar/statusbar.html',
                         controller  : 'StatusBarController'
                     },
                     'content' : {
@@ -48,11 +48,11 @@ angular.module('bkmk', ['ui.bootstrap', 'bkmk.directives', 'bkmk.controllers', '
                 url         : '/about',
                 views       : {
                     'menubar' : {
-                        templateUrl : 'js/directives/menubar/menubar.html',
+                        templateUrl : 'partials/menubar/menubar.html',
                         controller  : 'MenuBarController'
                     },
                     'statusbar' : {
-                        templateUrl : 'js/directives/statusbar/statusbar.html',
+                        templateUrl : 'partials/statusbar/statusbar.html',
                         controller  : 'StatusBarController'
                     },
                     'content' : {
