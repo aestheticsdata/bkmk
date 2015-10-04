@@ -8,22 +8,58 @@ angular.module('bkmk', ['ui.bootstrap', 'bkmk.directives', 'bkmk.controllers', '
 
             .state('home', {
                 url         : '/home',
-                templateUrl : 'partials/home.html',
-                controller  : 'HomeController',
+                views       : {
+                    'menubar' : {
+                        templateUrl : 'js/directives/menubar/menubar.html',
+                        controller  : 'MenuBarController'
+                    },
+                    'statusbar' : {
+                        templateUrl : 'js/directives/statusbar/statusbar.html',
+                        controller  : 'StatusBarController'
+                    },
+                    'content' : {
+                        templateUrl : 'partials/home.html',
+                        controller  : 'HomeController'
+                    }
+                },
                 params      : {title : 'Home'}
             })
 
             .state('admin', {
                 url         : '/admin',
-                templateUrl : 'partials/admin.html',
-                controller  : 'AdminController',
+                views       : {
+                    'menubar' : {
+                        templateUrl : 'js/directives/menubar/menubar.html',
+                        controller  : 'MenuBarController'
+                    },
+                    'statusbar' : {
+                        templateUrl : 'js/directives/statusbar/statusbar.html',
+                        controller  : 'StatusBarController'
+                    },
+                    'content' : {
+                        templateUrl : 'partials/admin.html',
+                        controller  : 'AdminController'
+                    }
+                },
                 params      : {title : 'Admin'}
             })
 
             .state('about', {
                 url         : '/about',
-                templateUrl : 'partials/about.html',
-                controller  : 'AboutController',
+                views       : {
+                    'menubar' : {
+                        templateUrl : 'js/directives/menubar/menubar.html',
+                        controller  : 'MenuBarController'
+                    },
+                    'statusbar' : {
+                        templateUrl : 'js/directives/statusbar/statusbar.html',
+                        controller  : 'StatusBarController'
+                    },
+                    'content' : {
+                        templateUrl : 'partials/about.html',
+                        controller  : 'AboutController'
+                    }
+                },
                 params      : {title : 'About'}
             })
 

@@ -4,6 +4,9 @@ angular.module('bkmk.controllers').controller('StatusBarController', StatusBarCo
 
 function StatusBarController($scope, $log, $state, $stateParams, ViewTypeState) {
 
+    $log.debug('StatusBarController');
+    $log.debug($state);
+
     $scope.statusbar = {
         status             : $state.params.title + ($stateParams.category !== undefined ? ' '+$stateParams.category : ''),
         searchbox          : false,
