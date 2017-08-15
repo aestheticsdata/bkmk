@@ -1,8 +1,10 @@
 // app.js
 
 angular.module('bkmk', ['ui.bootstrap', 'bkmk.directives', 'bkmk.controllers', 'bkmk.services', 'ui.router'])
-    .config(function ($stateProvider, $urlRouterProvider) {
+    .config(function ($stateProvider, $urlRouterProvider, $qProvider) {
 
+
+        $qProvider.errorOnUnhandledRejections(false);
 
         $stateProvider
 
@@ -70,7 +72,7 @@ angular.module('bkmk', ['ui.bootstrap', 'bkmk.directives', 'bkmk.controllers', '
                 params      : {title : 'List'},
                 resolve     : {
                     ds: function (DataService) {
-                        return DataService.getData().success(function (data) {
+                        return DataService.getData().then(function (data) {
                             return data;
                         });
                     }
@@ -81,5 +83,5 @@ angular.module('bkmk', ['ui.bootstrap', 'bkmk.directives', 'bkmk.controllers', '
     })
 
     .run(function ($state) {
-        $state.go('home');
+        $state.transitionTo('home');
     });

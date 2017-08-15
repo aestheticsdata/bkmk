@@ -8,7 +8,7 @@ function HomeController($scope, $log, DataService) {
 
     $scope.isHome = true;
 
-    DataService.getData().success(function (data) {
+    DataService.getData().then(function (data) {
 
         $log.debug(data);
 
